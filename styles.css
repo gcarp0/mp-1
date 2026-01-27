@@ -1,0 +1,23 @@
+/* add to every css styling, universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* add classes if you want colors to be different */
+
+/*
+body {
+    background-color: ;
+}
+h1 {
+    color: navy;
+}
+nav {
+    background-color: darkblue;
+    padding: 10px;
+    border: 2px;
+    border-color: lightgray;    
+}
+
