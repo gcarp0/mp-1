@@ -7,20 +7,28 @@
 
 /* add classes if you want colors to be different */
 
-/*
 body {
-    background-color: ;
+    background-color: rgb(175, 196, 251);
 }
 h1 {
     color: navy;
 }
 nav {
-    background-color: darkblue;
+    background-color: darkslategray;
     padding: 10px;
     border: 2px;
     border-color: lightgray;    
 }
+footer {
+    position: fixed;
+    background-color: darkslategray;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px;    
+}
 
+/*
 (calc)
 body {
             background-color: rgba(216, 248, 232, 0.99);
