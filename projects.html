@@ -2,36 +2,71 @@
 <html lang="en"> <!-- required -->
 <head>
     <meta charset="UTF-8">
-    My Projects! | Gina Carpenter </head>
-<h1>Projects</h1>
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- required to put type -->
+    <title> My Projects! | Gina Carpenter </title>
+</head>
+<body>
+<header>
+    <h1>
+        Gina Carpenter
+    </h1>
+    <br>
+    <p>
+        Student at Boston University
+    </p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="edu.html">Education</a></li>
+        <li><a href="employ.html">Employment</a></li>
+        <li><a href="extra.html">Extracurriculars</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resources.html">My Documents</a></li>
+    </ul>
+</nav>
+
+<main>
+<h2>Projects</h2>
 
 <!-- now add other projects -->
+<h3> TerrierTable </h3>
+<ul>
+    <li>
+    React TypeScript app that helps Boston University communities discover leftover-food events, reserve servings, and reduce campus food waste. 
+    It ships with a marketing/landing experience, authenticated flows for students, and club-oriented tools for publishing and managing events through Supabase. 
+    Built collaboratively as a semester-long group project for CS391: Spark! Software Engineering Immersion.
+    </li>
+</ul>
+<br>
 
-<body>
-
-<h1> Calculator </h1>
-
+<h3> Integrated Calculator </h3>
+<br>
 <div> <input class='boxes' type="text" id="box1"> </div>
-<br/>
-<div> <button onclick="Doadd()">+</button> <button onclick="Dosub()">-</button> <button onclick="Dodiv()">/</button> <button onclick="Domult()">*</button> <button onclick="Dopower()">^</button></div>
-<br/>
+
+<div> 
+    <button onclick="Doadd()">+</button> 
+    <button onclick="Dosub()">-</button> 
+    <button onclick="Dodiv()">/</button> 
+    <button onclick="Domult()">*</button> 
+    <button onclick="Dopower()">^</button>
+</div>
+
 <input class='boxes' type="text" id="box2">
-    
-<br/>
-<br/>
-    
+
 <div> <input class='boxes' type='text' id='box3'> </div>
-   <div class="text-center">
-    <br/>
-<button onclick="DoClear()">clear</button> 
-    </div> 
-<script src="calculator.js"></script>
-</body>
+<div class="text-center">
+    <button onclick="DoClear()">clear</button> 
+</div> 
+</main>
 
 <footer>
-    <p>All Rights Reserved by Gina Carpenter
-        <a href="https://youtu.be/Lm4LYX3xdkU?si=0Mgoha_0lzGIcBRb">Credits</a>
-    </a>
-    &#169 </p>
+<p> All Rights Reserved
+        <a href="https://youtu.be/Lm4LYX3xdkU?si=0Mgoha_0lzGIcBRb">Credits</a> &#169 
+</p>
 </footer>
+
+<script src="calculator.js"></script>
+</body>
 </html> 

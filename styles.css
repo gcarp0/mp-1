@@ -4,64 +4,89 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* add classes if you want colors to be different */
-
+#page-wrapper {
+    width: 80vw; /* 80% of view width */
+    margin: 0 auto;
+}
+#nav-main {
+    width: 100%; /* 80% of parent, whicih is 80vw*/
+    display: flex;
+    flex-direction: row;
+}
 body {
+    font-family: georgia, serif;
     background-color: rgb(175, 196, 251);
 }
 h1 {
-    color: navy;
+    font-size: 150%;
 }
-nav {
+h3 {
+    font-family: georgia, serif;
+}
+h4 {
+    font-family: 'Times New Roman', serif;
+    font-size: 125%;
+    font-weight: 120;
+}
+header {
+    justify-content: center;
     background-color: darkslategray;
+    color: rgba(255, 255, 255, 0.756);
     padding: 10px;
-    border: 2px;
-    border-color: lightgray;    
 }
+
 footer {
     position: fixed;
     background-color: darkslategray;
+    bottom: 0;
     width: 100%;
-    color: white;
+    color: rgba(255, 255, 255, 0.756);
     text-align: center;
-    padding: 10px;    
+    padding: 10px;   
+}
+nav {
+    background-color: rgba(255, 255, 255, 0.756;
+    width: 30%;
+    color: darkslategray;
+}
+nav ul {
+    padding-left: 10%; /* indent */ 
+    list-style: none; /* no bullets */ 
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+nav li {
+    border: 3px solid rgb(175, 196, 251);
+
+    text-decoration: none;
+
+}
+main {
+    width: 70%;
+    height: 100vh;
+    padding-top: 100px;
+    padding-left: 10px;
+    font-size: calc(2px + 1.5vh);
 }
 
-/*
-(calc)
-body {
-            background-color: rgba(216, 248, 232, 0.99);
-        }
-
-        h1 {
-            font-family: georgia;
-            font-size: 150%;
-            color: darkgreen;
-            text-align: left;
-                
-        }
-        
-        button {
-            height: 40px;
-            width: 60px;
-            border-radius: 5px;
-            border: 1px solid green;
-            font-size: px;
-            font-family: georgia;
-            background-color: darkseagreen;
-            color: white;
-            text-align: center;
-            }
-        
-        
-        
-        .boxes {
-            border: 4px solid green;
-            width: 300px;
-            height: 100px;
-            text-align: center;
-            font-size: 40px;
-            color: white;
-            font-family: georgia;
-            background-color: darkseagreen;     }
+button {
+    height: 40px;
+    width: 60px;
+    border-radius: 5px;
+    border: 1px solid green;
+    background-color: darkseagreen;
+    color: white;
+    text-align: center;
+}
+          
+.boxes {
+    border: 4px solid green;
+    width: 350px;
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: georgia;
+    background-color: darkseagreen;     
+}
