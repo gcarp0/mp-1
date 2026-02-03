@@ -128,3 +128,27 @@ main img{
     font-family: georgia;
     background-color: slategray;     
 }
+/* @media (min-width: 750px) {
+    #nav-main {
+        flex-direction: row;
+    }
+    nav {
+        max-width: 30%;
+        width: 30%;
+        height: 100vh;
+    }
+    nav ul {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+    header {
+        text-align: left;
+    }
+}
+@media (min-width: 1000px) {
+    main {
+        max-width: 70%;
+        width: 70%;
+    }
+}
