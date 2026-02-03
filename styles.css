@@ -128,27 +128,31 @@ main img{
     font-family: georgia;
     background-color: slategray;     
 }
-/* @media (min-width: 750px) {
-    #nav-main {
-        flex-direction: row;
-    }
-    nav {
-        max-width: 30%;
-        width: 30%;
-        height: 100vh;
-    }
-    nav ul {
+@media screen and (max-width: 1000px) {
+    #nav-main{
         flex-direction: column;
+    }
+    nav, main{
+        width: 100%;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
-        height: 100%;
     }
-    header {
-        text-align: left;
+    nav li{
+        font-size: calc(3px + 3vw);
+        width: 18%;
+        padding: 1%;
+        margin: 1%;
     }
-}
-@media (min-width: 1000px) {
-    main {
-        max-width: 70%;
-        width: 70%;
+    #this-one{
+        flex-direction: column;
+    }
+    header{
+        text-align: center;
+    }
+    main{
+        height: 100vh;
     }
 }
