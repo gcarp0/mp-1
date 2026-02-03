@@ -4,56 +4,151 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* add classes if you want colors to be different */
-
-/*
+#page-wrapper {
+    width: 80vw; /* 80% of view width */
+    margin: 0 auto;
+}
+#nav-main {
+    width: 100%; /* 80% of parent, whicih is 80vw*/
+    display: flex;
+    flex-direction: row;
+}
+#large-link{
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+#large-link a:link{
+    color: black
+}
+#large-link a:visited{
+    color: black
+}
 body {
-    background-color: ;
+    font-family: georgia, serif;
+    background-color: rgb(167, 187, 240);
 }
 h1 {
-    color: navy;
+    font-size: 150%;
+}
+h3 {
+    font-family: georgia, serif;
+}
+h4 {
+    font-family: 'Times New Roman', serif;
+    font-size: 125%;
+    font-weight: 120;
+}
+header {
+    justify-content: center;
+    background-color: darkslategray;
+    color: #faf9ed;
+    padding: 10px;
+}
+footer {
+    background-color: darkslategray;
+    padding: 10px;
+    width: 100%;
+    color: #faf9ed;
+    text-align: center;
+    padding: 10px;   
 }
 nav {
-    background-color: darkblue;
-    padding: 10px;
-    border: 2px;
-    border-color: lightgray;    
+    background-color: #faf9ed;
+    width: 20%;
+    color: darkslategray;
+    height: 100;
+    text-decoration: none;
 }
-
-(calc)
-body {
-            background-color: rgba(216, 248, 232, 0.99);
-        }
-
-        h1 {
-            font-family: georgia;
-            font-size: 150%;
-            color: darkgreen;
-            text-align: left;
-                
-        }
-        
-        button {
-            height: 40px;
-            width: 60px;
-            border-radius: 5px;
-            border: 1px solid green;
-            font-size: px;
-            font-family: georgia;
-            background-color: darkseagreen;
-            color: white;
-            text-align: center;
-            }
-        
-        
-        
-        .boxes {
-            border: 4px solid green;
-            width: 300px;
-            height: 100px;
-            text-align: center;
-            font-size: 40px;
-            color: white;
-            font-family: georgia;
-            background-color: darkseagreen;     }
+nav ul {
+    list-style: none; /* no bullets */ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+nav li {
+    font-weight: bold;
+    color: darkslategray;
+    text-decoration: none;
+}
+nav a {
+    transition: color 0.2s ease;
+    text-decoration: none;
+    color: darkslategray
+}
+nav a:hover {
+    color: slategray;
+}
+nav a:link{
+    text-decoration: none;
+    color: darkslategray
+}
+nav a:visited{
+    text-decoration: none;
+    color: darkslategray
+}
+main {
+    width: 70%;
+    min-height: 100vh;
+    padding: 2%;
+    padding-left: 10px;
+    padding-bottom: 80px;
+    font-size: calc(2px + 1.5vh);
+    line-height: 1.75;
+}
+main img{
+    max-width: 30%;
+}
+#calc {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 40 auto;
+    gap: 16px;
+}
+#calc button {
+    height: 40px;
+    width: 60px;
+    border-radius: 5px;
+    border: 1px solid darkslategray;
+    background-color: slategray;
+    color: white;
+    text-align: center;
+    margin: 4px;
+}        
+#calc .boxes {
+    border: 4px solid darkslategray;
+    width: 350px;
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: georgia;
+    background-color: slategray;     
+}
+/* @media (min-width: 750px) {
+    #nav-main {
+        flex-direction: row;
+    }
+    nav {
+        max-width: 30%;
+        width: 30%;
+        height: 100vh;
+    }
+    nav ul {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+    header {
+        text-align: left;
+    }
+}
+@media (min-width: 1000px) {
+    main {
+        max-width: 70%;
+        width: 70%;
+    }
+}
