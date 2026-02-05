@@ -9,7 +9,7 @@
     margin: 0 auto;
 }
 #nav-main {
-    width: 100%; /* 80% of parent, whicih is 80vw*/
+    width: 100%; /* 80% of parent, which is 80vw*/
     display: flex;
     flex-direction: row;
 }
@@ -25,17 +25,21 @@
     color: black
 }
 body {
-    font-family: georgia, serif;
+    font-family: 'Battambang';
     background-color: rgb(167, 187, 240);
 }
 h1 {
     font-size: 150%;
 }
+h2 {
+    font-size: 120%;
+    font-weight: 200%;
+}
 h3 {
-    font-family: georgia, serif;
+    font-family: 'Battambang';
 }
 h4 {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Battambang';
     font-size: 125%;
     font-weight: 120;
 }
@@ -50,12 +54,15 @@ footer {
     padding: 10px;
     width: 100%;
     color: #faf9ed;
-    text-align: center;
-    padding: 10px;   
+    text-align: center;  
+}
+footer a{
+    color: #faf9ed;
 }
 nav {
     background-color: #faf9ed;
     width: 20%;
+    max-width: 200px;
     color: darkslategray;
     height: 100;
     text-decoration: none;
@@ -74,22 +81,12 @@ nav li {
     text-decoration: none;
 }
 nav a {
-    transition: color 0.2s ease;
+    display: block;
     text-decoration: none;
-    color: darkslategray
-}
-nav a:hover {
-    color: slategray;
-}
-nav a:link{
-    text-decoration: none;
-    color: darkslategray
-}
-nav a:visited{
-    text-decoration: none;
-    color: darkslategray
+    color: darkslategray;
 }
 main {
+    font-family: 'Battambang';
     width: 70%;
     min-height: 100vh;
     padding: 2%;
@@ -128,31 +125,48 @@ main img{
     font-family: georgia;
     background-color: slategray;     
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 750px) {
     #nav-main{
         flex-direction: column;
     }
     nav, main{
         width: 100%;
+        max-width: none;
     }
     nav ul{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-evenly;
     }
+    /* need to fix nav because when the screen gets small they overlap*/
     nav li{
-        font-size: calc(3px + 3vw);
         width: 18%;
-        padding: 1%;
-        margin: 1%;
-    }
-    #this-one{
-        flex-direction: column;
+        margin: 2%;
     }
     header{
         text-align: center;
     }
     main{
-        height: 100vh;
+        min-height: 100vh;
+        padding-bottom: 10px;
     }
+}
+#extra li {
+    list-style: none; /* no bullets */ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    padding-left: 5%;
+    line-height: 2;
+}
+#edu {
+    width: 70%;
+}
+#edu li{
+    list-style: none; /* no bullets */
+    height: 100%;
+    padding-left: 5%;
+    line-height: 2;
 }
